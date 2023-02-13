@@ -3,26 +3,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Sanal Kitaplarım</title>
-    <style>
-        body {
-            max-width: 500px;
-            background-color: rgb(172, 240, 240);
-            font-family: Trebuchet, Verdana, sans-serif;
-            font-size: 15px;
-        }
-    @media screen and (min-width: 510px) {
-       body  { margin: auto;}
-    }
-    </style>
-<!--     
-<div class="my-item">
-    <div class="my-date"></div>
-    <a target=NewTab href=""></a>
-    <img src="" />
-    <div class="my-text"></div>
-</div>
- -->
 <style>
+    body {
+        max-width: 1000px;
+        background: #cef;
+        font-family: Trebuchet, Verdana, sans-serif;
+        font-size: 15px;
+    }
+    div.wide, div.content {
+        width: 100%;
+    }
+@media screen and (min-width: 500px) {
+    div.wide {
+        width: 500px;
+        margin: auto;
+        padding: 1em;
+        border: thin solid;
+    }
+    div.content {
+        display: inline-block;
+        vertical-align: top;
+        width: 400px;
+        padding: 1em;
+        margin: 1em;
+    }
+}
     .my-item {
         padding: 10px;
     }
@@ -52,11 +57,12 @@
         margin: 5px;
     }
 </style>
-    
+
+<div class=wide>
 <p><a target=NewTab href="https://eyler.blogspot.com/2023/01/bulut.html">Buluta yazmak</a> için 2004'den beri Blogger, 2015'den beri GitHub yazılımını kullanıyorum. Geleneksel anlamda basılı bir kitabım olmadı ama aşağıdaki işlerin herbiri sanal bir kitap niteliğindedir.
 <p>Kırmızı işaretli sayfalardan yararlanmak için teknik bilgi gerekebilir. Diğer sayfalar genel kullanıma açık. Mavi işaretli sayfalar ise basılı kitapların izinli web sürümü.
-
-
+</div>
+<div class=content>
 <h3>Blogger</h3>
 <div class="my-item">
     <div class="my-date">2004 -- 55 yazı</div>
@@ -89,7 +95,6 @@
     <div class="my-text">Evde geçireceğimiz bu Ramazan mevsimini Kuran kelimeleri ile süsleyelim. Günlük konuları birkaç gün öncesinde burada yayınlıyorum. Cevaplarınızı...</div>
 </div>
 
-<br />
 <h3>GitHub</h3>
 <div class="my-item">
     <div class="my-date tech">2015-2022</div>
@@ -122,8 +127,8 @@
     <img src="https://www.aysesolak.com/wp-content/uploads/i.jpg" />
     <div class="my-text">Iqra yazılımını uygulayan dört kitapçık: Kur'an Kelimeleri, Cuma Dersleri, Arapça Dersler ve muhtelif alıntılar.</div>
 </div>
-
-<br />
+</div>
+<div class=content>
 <h3>Ahbab ve Akraba için</h3>
 <div class="my-item">
     <div class="my-date">2013 -- 41 yazı</div>
@@ -163,12 +168,6 @@
     <div class="my-text">Bu sayfalarda ortak dedemiz Hacı Ali Efendi'nin soyundan gelen kişilerin akrabalık bağlarını, hatıralarını ve (eskimeyen) fotoğraflarını bulacaksınız.</div>
 </div>
 <div class="my-item">
-    <div class="my-date book">2020 -- Basılı ki̇tap</div>
-    <a target=NewTab href="https://buyukleryolunda.blogspot.com/">Büyükler Yolunda Öpülesi İzler -- Muhsin Abay</a>
-    <img src="./image/büyükler kapak.jpg" />
-    <div class="my-text">Günümüze kadar gelen âlimler ve evliyâlar silsilesinden ziyaret etmekle şereflendiğimiz beldeler: Hicaz, Delhi, Semerkand, Buhâra, Kâhire, Bağdad ve Anadolu.</div>
-</div>
-<div class="my-item">
     <div class="my-date">2020 -- 47 ders</div>
     <a target=NewTab href="https://maeyler.github.io/FR/">Cours de Français -- Seher Eyler</a>
     <img src="./image/Mauger.jpg" />
@@ -179,4 +178,11 @@
     <a target=NewTab href="https://toprakdam.blogspot.com/">Toprak Damlı Evlerin Çocukları -- Anı Bisküvi</a>
     <img src="https://1.bp.blogspot.com/-M7VTw3WqrZ8/XyBt-V7FYyI/AAAAAAAAbhw/ALmcAnbbStINlBsMOq17W17gr94jZpBFgCPcBGAYYCw/w128-h128-p-k-no-nu/kapak1.JPG" />
     <div class="my-text">Karaman’da doğmuş, üst düzey kariyerleriyle Türkiye ve dünyaya açılmış bir kuşağın hatıra yüklü hayat hikayesidir bu kitap...</div>
+</div>
+<div class="my-item">
+    <div class="my-date">2023 -- 11 bölüm</div>
+    <a target=NewTab href="https://muhsin-abay.github.io/Doktor/">Şirket Doktorluğu Notları -- Muhsin Abay</a>
+    <img src="./image/doktor.jpg" />
+    <div class="my-text">Günümüz iş dünyası sürekli bir değişim zorlaması altındadır. Geçmişte şirketlerin başarılarını sağlayan tarihî... </div>
+</div>
 </div>
