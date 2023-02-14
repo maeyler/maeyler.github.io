@@ -8,7 +8,7 @@
         max-width: 1000px;
         background: #cef;
         font-family: Trebuchet, Verdana, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
     }
     h3 {
         text-align: center;
@@ -46,18 +46,18 @@
     .tech { background-color: rgb(201, 15, 15); }
     .book { background-color: rgb(16, 16, 218); }
     .my-text {
-        width: 70%;
+        width: 250px;
         display: inline-block;
         vertical-align: top;
+        font-size: 13px;
         margin: 5px;
     }
-    .my-item a {
+    .my-item > a:nth-child(2) {
         display: block;
         margin: 8px 0;
     }
     .my-item img {
         background-color: gray;
-        display: inline-block;
         width: 72px;
         aspect-ratio: 1;
         margin: 5px 0;
@@ -191,3 +191,11 @@
     <div class="my-text">Günümüz iş dünyası sürekli bir değişim zorlaması altındadır. Geçmişte şirketlerin başarılarını sağlayan tarihî... </div>
 </div>
 </div>
+<script>
+for (let x of document.body.querySelectorAll('.my-item > a')) {
+    let a = document.createElement('a')
+    a.append(x.nextElementSibling) //img
+    if (x.href) a.href = x.href  //same link
+    x.after(a)  //insert a after x
+}
+</script>
