@@ -22,6 +22,7 @@
 @media screen and (min-width: 500px) {
     div.wide {
         width: 500px;
+        background: rgb(221, 255, 221);
         margin: auto;
         padding: 1em;
         border: thin solid;
@@ -134,7 +135,7 @@
 </div>
 
 <div class=content>
-<h3>Ahbap işi</h3>
+<h3>Yakınlarım için</h3>
 <div class="my-item">
     <div class="my-date">2013 -- 41 yazı</div>
     <a target=NewTab href="https://tanzanyadan.blogspot.com/?view=flipcard">Niye Tanzanya, Nere Arusha -- Ömer Cebeci</a>
@@ -150,7 +151,7 @@
 <div class="my-item">
     <div class="my-date book">2015 -- Basılı ki̇tap</div>
     <a target=NewTab href="https://zaman-abay.blogspot.com/2015/05/onsoz.html">Zamanı Değerlendirmek -- Muhsin Abay</a>
-    <img src="./image/zaman kapak.jpg" />
+    <img src="https://muhsin-abay.github.io/Doktor/image/zaman kapak.jpg" />
     <div class="my-text">Tenhaları arayan ve az hareketli hayâtı seven bir mizaca sahip olmakla berâber, Cenâb-ı Hakk'ın takdîri olarak, farklı meslek ve meşrepten insanlarla...</div>
 </div>
 <div class="my-item">
@@ -194,8 +195,9 @@
 <script>
 for (let x of document.body.querySelectorAll('.my-item > a')) {
     let a = document.createElement('a')
-    a.append(x.nextElementSibling) //img
-    if (x.href) a.href = x.href  //same link
+    a.append(x.nextElementSibling) //make img
+    if (x.href) a.href = x.href  //use the same link
+    if (x.target) a.target = x.target  //and target
     x.after(a)  //insert a after x
 }
 </script>
