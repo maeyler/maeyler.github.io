@@ -14,6 +14,7 @@ div {
 }
 .menu {
 	text-align: center;
+    max-width: 460px;
 	background: rgb(220,230,250);
 	border: 1px solid rgb(50,50,50);
 	border-bottom: none;
@@ -21,6 +22,13 @@ div {
 	font-size: 13px;
 	font-weight: bold;
 	padding: 11px;
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 100%;
+	font-size: 10px;
+	box-sizing: border-box;
+  }
 }
 .menu a {
 	color: black;
